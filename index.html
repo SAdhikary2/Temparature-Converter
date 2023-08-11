@@ -1,59 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temparature Converter</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- font-awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <body>
+      <!-- starting the card div -->
 
-  
+      <div class="temparature-converter">
+        <div class="upper-section">
+          <p id="time">10:25 AM</p>
+          <p id="date">25-05-23</p>
+        </div>
+        <div class="middle">
+          <h2>Temparature Converter</h2>
 
-        <!-- starting the card div -->
-        
-            <div class="temparature-converter">
-                <div class="upper-section">
-                    <p id="time">10:25 AM</p>
-                    <p id="date">25-05-23</p>
-                </div>
-                <h2>Temparature Converter</h2>
-
-                <div class="degree-item">
-                    <div class="degree-field">
-                        <label id="label" for="degree">Degrees</label><br>
-                        <input type="degree" name="degree" id="degree">
-                    </div>
-
-                    <div class="dropdown">
-                        <select  required id="temp-type">
-                            <option id="Select" value="">Select</option>
-                            <option value="Fahrenheit">Fahrenheit</option>
-                            <option value="Kelvin">Kelvin</option>
-                        </select>
-                    </div>
-                </div>
-                    
-                    <div class="result">
-                        <span id="result_heading">Result(Celcius)</span>
-                        <h2 id="celcius_value" class="celcius">54&deg;C</h2>
-                    </div>
-
-                    <div class="button-section">
-                        <button id="button">Convert</button>
-
-                    </div>
-                   
-                
-              
-
-
-
+          <div class="degree-item">
+            <div class="degree-field">
+              <label id="label" for="degree">Degrees</label><br />
+              <input type="degree" name="degree" id="degree" />
             </div>
-            
-            
+
+            <div class="dropdown">
+              <select required id="temp-type">
+                <option id="Select" value="">Select</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="result">
+            <span id="result_heading">Result(Celcius)</span>
+            <h2 id="celcius_value" class="celcius">54&deg;C</h2>
+          </div>
+
+          <div class="button-section">
+            <button id="button">Convert</button>
+          </div>
+        </div>
+      </div>
 
       <!-- bubble animation -->
       <div class="wrapper">
@@ -73,15 +68,8 @@
         <div><span class="dot"></span></div>
         <div><span class="dot"></span></div>
       </div>
-
-
-
-
-
-      </body>
-    
-
+    </body>
 
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
